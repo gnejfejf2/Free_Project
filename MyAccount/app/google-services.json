@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "183671106598",
+    "firebase_url": "https://kangfcmreal.firebaseio.com",
+    "project_id": "kangfcmreal",
+    "storage_bucket": "kangfcmreal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183671106598:android:35862010473db45aac4ae7",
+        "android_client_info": {
+          "package_name": "com.example.myaccount"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183671106598-srk5kcmh8vg00atkmciuplp0gcus1o3o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwRtJSvED8JDL4Y2lIONvgDICRxuWdPMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183671106598-srk5kcmh8vg00atkmciuplp0gcus1o3o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

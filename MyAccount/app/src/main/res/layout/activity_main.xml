@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_mainbackground">
+
+    <TextView
+        android:id="@+id/TextView_Account"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="계좌조회를 눌러주세요"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.553"></TextView>
+
+    <Button
+        android:id="@+id/btn_Check"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="결제내역"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Account" />
+
+    <Button
+        android:id="@+id/btn_reset"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="계좌 조회"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Check"
+        app:layout_constraintTop_toBottomOf="@+id/TextView_Account" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/myphoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:src="@drawable/myphoto"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Account"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.517"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/couplephoto"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_vertical"
+
+        android:layout_marginLeft="164dp"
+        android:src="@drawable/girlfrined"
+        app:civ_border_color="#FFFFFF"
+        app:civ_border_width="1dp"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Account"
+        app:layout_constraintLeft_toRightOf="@+id/myphoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.511"></de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/TextView_Dday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contextClickable="true"
+        android:text="95일"
+        android:textSize="100px"
+        android:textColor="#ff0000"
+        android:clickable="true"
+        app:layout_constraintBottom_toTopOf="@+id/TextView_Account"
+        app:layout_constraintEnd_toStartOf="@+id/couplephoto"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/myphoto"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <Button
+        android:id="@+id/btn_Account"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="커플통장"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_Shoppingbasket"
+        app:layout_constraintEnd_toStartOf="@+id/btn_Shoppingbasket"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Account" />
+
+    <Button
+        android:id="@+id/btn_Shoppingbasket"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:text="장바구니"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextView_Account"
+        app:layout_constraintStart_toStartOf="@+id/TextView_Account" />
+
+    <Button
+        android:id="@+id/btn_Board"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="게시판"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Shoppingbasket" />
+
+    <Button
+        android:id="@+id/Button_daysetting"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:background="@drawable/ic_cal"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+    <ImageView
+        android:id="@+id/alarmbutton"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_alarm_on_black_24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button_paybill"
+        app:layout_constraintStart_toEndOf="@+id/Button_Logout"></ImageView>
+
+    <Button
+        android:id="@+id/Button_Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_white"
+        android:text="Logout"
+        app:layout_constraintEnd_toStartOf="@+id/Button_paybill"
+        app:layout_constraintRight_toLeftOf="@id/Button_paybill"
+        app:layout_constraintStart_toEndOf="@+id/Button_daysetting"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <Button
+        android:id="@+id/Button_paybill"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/ic_money"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="4dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

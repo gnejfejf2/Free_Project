@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/photo_background"
+    android:orientation="vertical"
+    android:weightSum="10"
+    tools:ignore="MissingDefaultResource">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="비밀번호 찾기"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp"></TextView>
+
+
+
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/find_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="아이디"
+            android:privateImeOptions="defaultInputmode=korean"></com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:id="@+id/find_Name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="이름"
+            android:privateImeOptions="defaultInputmode=korean"></com.google.android.material.textfield.TextInputEditText>
+
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/btn_find"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/btn_blue"
+        android:clickable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+
+        >
+
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="비밀번호 찾기"
+            android:textColor="#ffffff"
+            android:textSize="24dp"></TextView>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

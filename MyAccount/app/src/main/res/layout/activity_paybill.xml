@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/backgroundpay"
+    tools:context=".Activity.MemoActivity"
+    >
+
+    <TextView
+
+        android:id="@+id/title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:hint="결제페이지"
+        android:gravity="center"
+        android:textSize="85px"
+
+        ></TextView>
+
+    <TextView
+        android:layout_marginTop="150dp"
+        android:id="@+id/Paybill_checkmoney"
+        android:textSize="100px"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="현재 가진 금액나올공간"
+
+        android:layout_marginBottom="10dp"
+        ></TextView>
+
+
+        <EditText
+            android:id="@+id/Paybill_money"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:textSize="120px"
+            android:hint="충전할 금액을 입력해주세요"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:digits="0123456789"
+            ></EditText>
+
+
+    <TextView
+        android:id="@+id/Paybill_inpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="충전금액은 최소 100원 이상입니다!"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/Button_Phone"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_white"
+        android:textSize="100px"
+        android:text="모바일결제"
+
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/Button_KaKao"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_yellow"
+        android:textSize="100px"
+        android:text="KAKAOPAY"
+        android:layout_marginBottom="10dp"
+        />
+
+    <Button
+        android:id="@+id/Button_Payco"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/btn_white"
+        android:textSize="100px"
+        android:text="PAYCO"
+        android:textColor="#FF0000"
+
+        android:layout_marginBottom="10dp"
+         />
+
+
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Activity.MemoActivity">I
+
+        <EditText
+            android:id="@+id/itemtitle_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="상품명"
+            android:textSize="85px"
+
+            ></EditText>
+        <EditText
+            android:id="@+id/itemcontent_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="상품설명"
+            android:textSize="85px"
+
+            ></EditText>
+
+        <EditText
+            android:id="@+id/itemprice_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="가격"
+            android:digits="0123456789"
+            android:textSize="85px"
+
+            ></EditText>
+        <ImageView
+            android:id="@+id/item_ImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </ImageView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/write_contentlayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/Button_itemimage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="갤러리" />
+
+        <Button
+            android:id="@+id/Button_itemsetbutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="상품등록" />
+
+        <ImageView
+            android:id="@+id/test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></ImageView>
+
+
+    </LinearLayout>
+</ScrollView>

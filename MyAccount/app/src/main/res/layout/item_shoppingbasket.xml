@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        android:id="@+id/shoppingbasket_textView_sellid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:text="판매자 아이디"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></TextView>
+
+    <TextView
+        android:id="@+id/shoppingbasket_textView_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:text="판매상품"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingbasket_textView_sellid"></TextView>
+
+    <TextView
+        android:id="@+id/shoppingbasket_textView_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="48dp"
+        android:text="판매가격"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingbasket_textView_content"></TextView>
+
+    <ImageView
+        android:id="@+id/shoppingbasket_imageView_titleimage"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></ImageView>
+
+    <CheckBox
+        android:id="@+id/shoppingbasket_ckeckbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></CheckBox>
+
+
+    <TextView
+        android:id="@+id/textView_itembuynumber"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="1"
+        android:textSize="85px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingbasket_textView_price"
+        android:layout_marginLeft="100dp"/>
+
+    <ImageView
+        android:id="@+id/ImageView_upnum"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+
+        android:textSize="100px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingbasket_textView_price"
+        android:background="@drawable/ic_arrow_upward_black_24dp"
+        android:layout_marginLeft="130dp"/>
+    <ImageView
+        android:id="@+id/ImageView_downnum"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+
+        android:textSize="100px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shoppingbasket_textView_price"
+        android:background="@drawable/ic_arrow_downward_black_24dp"
+        android:layout_marginLeft="70dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

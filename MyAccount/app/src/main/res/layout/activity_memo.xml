@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.MemoActivity">
+
+    <EditText
+        android:id="@+id/title_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="제목"
+        android:textSize="85px"
+
+        ></EditText>
+
+
+
+        <EditText
+            android:id="@+id/content_edit"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:textSize="85px"
+            android:hint="내용"></EditText>
+
+        <TextView
+            android:id="@+id/day_edit"
+            android:textSize="85px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="날짜 (여기를 터치해 주세요)"></TextView>
+
+    <Button
+        android:id="@+id/Button_setbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삽입" />
+    <Button
+        android:id="@+id/Button_resetbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="수정" />
+    <Button
+        android:id="@+id/Button_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="삭제" />
+
+
+
+</LinearLayout>

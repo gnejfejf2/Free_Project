@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    >
+
+    <TextView
+        android:id="@+id/itemboard_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintHorizontal_weight="1"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="상품명"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+     />
+
+    <TextView
+        android:id="@+id/itemboard_price"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:padding="5dp"
+        android:text="가격"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="50px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/itemboard_name" />
+   <ImageView
+       android:id="@+id/itemtitle_imageView"
+       android:layout_width="200dp"
+       android:layout_height="80dp"
+       app:layout_constraintTop_toTopOf="parent"
+       app:layout_constraintRight_toRightOf="parent">
+
+   </ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="9">
+
+
+
+    <TextView
+        android:id="@id/test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="데이트 팝"
+        android:textSize="100px"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </TextView>
+
+
+    <ListView
+        android:id="@+id/ListView_CompanyBoard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        app:layout_constraintTop_toBottomOf="@+id/test"
+        tools:layout_editor_absoluteX="16dp"></ListView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/Companyboard_write_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/ic_write_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ListView_Board"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <Button
+        android:id="@+id/button_board"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="유저게시판"
+        tools:layout_editor_absoluteX="323dp"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ListView_CompanyBoard"/>
+    <Button
+        android:id="@+id/button_entrepreneur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="사업자인증"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/ListView_CompanyBoard"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
